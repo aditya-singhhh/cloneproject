@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color)
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight:700;
+}
+
+.container{
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: var(--primary-text-color)
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 14px 26px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 14px 26px;
+    transition: 0.2s ease-out;
+}
+
+.anchor-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 14px 26px;
+    transition: 0.2s ease-out;
+    align-items: center;
+    gap:8px;
+}
+
+.anchor-button:hover{
+    border-color: var(--accent-color);
+    color: var(--primary-text-color) !important;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--primary-text-color) !important;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.top-banner {
+    background-color: #e74694;
+    background-image: url('./assets/asset\ 32.png');
+    background-size: 400px;
+}
+
+.banner-text {
+    color: white;
+    padding: 21px 30px;
+    text-align: center;
+}
+
+.banner-text a{
+    color:white;
+    font-size: 1.1rem;
+}
+
+/*nav*/
+
+.main-nav{
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.company-logo img{
+    width: 250px;
+}
+
+.nav-links{
+    flex-basis: 900px;
+    justify-content: flex-end
+}
+
+.nav-links ul{
+    gap: 40px;
+    font-size: 1.3rem;
+}
+
+.sign-up{
+    margin-left: -20px;
+}
+
+.beta-tester{
+    color: #183b56;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.beta-tester-text{
+    position:absolute;
+    top:5px;
+    right: 5px;
+}
+
+.logo-tester{
+    gap:10px;
+}
+
+header{
+    padding: 70px 20px;
+}
+
+.header-section{
+    justify-content: center;
+    gap:110px;
+}
+
+.header-right img{
+    width: 800px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+}
+
+.header-left p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    max-width: 35vw;
+}
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    font-size: 1.3rem;
+    color: var(--primary-text-color);
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 60px;
+}
+
+#godaddy-logo{
+    height:40px
+}
+
+.right-arrow{
+    padding-left: 5px;
+    width: 20px;
+  }
+
+
+
+.features-header{
+    text-align: center;
+}
+
+.features-header h2{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.features-section{
+    margin-top: 110px;
+    padding: 50px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 850px;
+}
+
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.features-header-button{
+    flex-direction: column;
+}
+
+.features-card{
+    flex-direction: column;
+    gap:20px;
+    max-width: 30%;
+    text-align: center;
+    justify-content: center;
+}
+
+.features-area{
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:40px;
+}
+
+.features-section-logo{
+    width: 46px;
+}
+
+.features-card p{
+    font-size: 1.5rem;
+}
